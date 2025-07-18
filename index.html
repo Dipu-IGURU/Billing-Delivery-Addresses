@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Delivery Addresses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-card" id="addressForm">
+            <h1>Billing & Delivery Addresses</h1>
+            <h2>Billing Address</h2>
+            <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" required value="Manish singh">
+            </div>
+            <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" name="companyName">
+            </div>
+            <div class="form-group">
+                <label for="address1">Address1 <span class="required">*</span></label>
+                <input type="text" id="address1" name="address1" required value="manchester uk">
+            </div>
+            <div class="form-group">
+                <label for="address2">Address2</label>
+                <input type="text" id="address2" name="address2">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="county">County</label>
+                <input type="text" id="county" name="county">
+            </div>
+            <div class="form-group">
+                <label for="postCode">Post Code <span class="required">*</span></label>
+                <input type="text" id="postCode" name="postCode" required value="BH211LA">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required value="uthara-print1@digital-brains.io">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone(Code ++44) <span class="required">*</span></label>
+                <input type="text" id="phone" name="phone" required value="+44265845215">
+            </div>
+            <div class="form-group">
+                <label for="deliveryNotes">Delivery Notes</label>
+                <input type="text" id="deliveryNotes" name="deliveryNotes">
+            </div>
+            <div class="form-group switch-group">
+                <label class="switch">
+                    <input type="checkbox" id="sameAddress" checked>
+                    <span class="slider"></span>
+                </label>
+                <span class="switch-label">Same Address For Shipping</span>
+            </div>
+            <div class="form-group plain-packaging-group">
+                <button type="button" id="plainPackaging" class="plain-packaging">
+                    <span class="checkbox"></span>
+                    SEND IN PLAIN PACKAGING
+                </button>
+            </div>
+            <button type="submit" class="submit-btn">SAVE AND CONTINUE</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
