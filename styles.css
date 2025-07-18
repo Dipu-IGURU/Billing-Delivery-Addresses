@@ -102,6 +102,7 @@ body {
     background-color: #0a2942;
     border-radius: 28px;
     transition: .4s;
+    width: 55px;
 }
 
 .slider:before {
@@ -127,7 +128,7 @@ body {
 
 .switch-label {
     color: #0a2942;
-    font-size: 1.08rem;
+    font-size: 1rem;
     font-weight: bold;
     vertical-align: middle;
     letter-spacing: 0.01em;
@@ -149,7 +150,7 @@ body {
     border: none;
     border-radius: 28px;
     padding: 14px 38px;
-    font-size: 1.15rem;
+    font-size: 1rem;
     cursor: pointer;
     outline: none;
     box-shadow: 0 1px 4px rgba(0,0,0,0.07);
@@ -176,14 +177,15 @@ body {
 }
 
 .plain-packaging.selected .checkbox:after {
-    content: '';
+    content: '\2713';
     position: absolute;
-    left: 6px;
-    top: 6px;
-    width: 10px;
-    height: 10px;
-    background: #ffe000;
-    border-radius: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    line-height: 1;
 }
 
 .submit-btn {
